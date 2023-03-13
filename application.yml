@@ -36,7 +36,8 @@ eureka:
     availability-zones:
       beijing: blue,default
     service-url:
-      default: http://localhost:8761/eureka/
+      default: http://discovery-server:8761/eureka/
+      blue: http://discovery-server-blue:8861/eureka/
 
 # Spring Boot 1.5 makes actuator secure by default
 management.security.enabled: false
