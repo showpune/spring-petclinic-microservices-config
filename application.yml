@@ -37,7 +37,6 @@ eureka:
       beijing: blue,default
     service-url:
       default: http://localhost:8761/eureka/
-      blue: http://localhost:8761/eureka/
 
 # Spring Boot 1.5 makes actuator secure by default
 management.security.enabled: false
