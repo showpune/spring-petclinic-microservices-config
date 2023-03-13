@@ -27,7 +27,14 @@ spring:
       ddl-auto: none
 eureka:
   instance:
-    prefer-ip-address: true 
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    prefer-same-zone-eureka: true
+    region: beijing
+    availability-zones:
+      beijing: blue,default
 # Spring Boot 1.5 makes actuator secure by default
 management.security.enabled: false
 # Enable all Actuators and not only the two available by default /health and /info starting Spring Boot 2.0
