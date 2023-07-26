@@ -17,6 +17,9 @@ server:
 # Internationalization
 spring.messages.basename: messages/messages
 
+spring:
+  zipkin:
+    baseUrl: http://tracing-server
 ---
 spring:
   config:
