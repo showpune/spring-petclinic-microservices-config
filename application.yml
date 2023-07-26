@@ -74,7 +74,9 @@ management:
   tracing:
     sampling:
       probability: 1
-
+  zipkin：
+    tracing:
+      endpoint: http://tracing-server/api/v2/spans
 # Chaos Engineering
 ---
 spring:
