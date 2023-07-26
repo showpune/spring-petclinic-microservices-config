@@ -25,6 +25,8 @@ spring:
     open-in-view: false
     hibernate:
       ddl-auto: none
+  zipkin:
+    baseUrl: http://tracing-server
 eureka:
   instance:
     prefer-ip-address: true
